@@ -7,7 +7,7 @@ var sortStars = function(resultsArray) {
 }
 
 var compareStars = function(a, b) {
-  var output = (a.stargazers_count < b.stargazers_count) ? -1 : (a.stargazers_count > b.stargazers_count) ? 1 : 0;
+  var output = (a.stargazers_count < b.stargazers_count) ? 1 : (a.stargazers_count > b.stargazers_count) ? -1 : 0;
   return output;
 }
 
@@ -16,11 +16,12 @@ var compareStars = function(a, b) {
     $("#github-ajax").click(function() {
       console.log("clicky");
       $.ajax({
-        url: 'https://api.github.com/search/repositories?q=user%3Adenalisk+stars%3A>0&type=Repositories&ref=advsearch&l=&l=',
+        url: 'https://api.github.com/search/repositories?q=user%3Adenalisk&type=Repositories&ref=advsearch&l=&l=',
         type: 'GET',
         datatype: 'json',
         success: function(result) {
-          output = sortStars(result.items);
+          var output = sortStars(result.items);
+          console.log(output);
         },
         error: function(result) {
           console.log("error");
