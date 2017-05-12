@@ -1,14 +1,30 @@
 var sortStars = function(resultsArray) {
   var heldResults = resultsArray.sort(compareStars);
-  while (heldResults.length > 3) {
-    heldResults.pop();
-  }
-  return heldResults;
+  return heldResults.slice(0, 3);
 }
 
 var compareStars = function(a, b) {
   var output = (a.stargazers_count < b.stargazers_count) ? 1 : (a.stargazers_count > b.stargazers_count) ? -1 : 0;
   return output;
+}
+
+var toHtmlProjects = function(projectsArray) {
+  var newHtml = "";
+  console.log(projectsArray);
+  for (let i = 0; i < projectsArray.length; i++) {
+    var htmlString = `<div class="projects-holder">
+      <div class="container">
+        <h3>` + projectsArray[i].name + `</h3>
+        <hr>
+        <p>` + projectsArray[i].description + `</p>
+        <br>
+        <a href="https://www.github.com/` + projectsArray[i].full_name + `">Github Link</a>
+      </div>
+    </div>`
+    newHtml += htmlString;
+  }
+  console.log(htmlString);
+  return htmlString;
 }
 
 ﻿$(document).ready(function () {
@@ -22,6 +38,9 @@ var compareStars = function(a, b) {
         success: function(result) {
           var output = sortStars(result.items);
           console.log(output);
+          console.log(output[0].name);
+          var myNewHtml = toHtmlProjects(output);
+          $('#projects-container').html(toHtmlProjects(output));
         },
         error: function(result) {
           console.log("error");
