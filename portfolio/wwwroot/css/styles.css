@@ -2,6 +2,10 @@
     background-color: aliceblue;
 }
 
+div.centered {
+  text-align: center;
+}
+
 div.top-buffer {
-  height: 40px;
+  height: 60px;
 }

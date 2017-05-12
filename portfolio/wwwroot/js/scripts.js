@@ -11,10 +11,10 @@ var compareStars = function(a, b) {
 var toHtmlProjects = function(projectsArray) {
   var newHtml = "";
   for (let i = 0; i < projectsArray.length; i++) {
-    var htmlString = `<div class="projects-holder well">
-      <div class="container">
-        <h3>` + projectsArray[i].name + `</h3>
-        <hr>
+    var htmlString = `<div class="projects-holder panel panel-success">
+      <div class="panel-heading">
+        <h2>` + projectsArray[i].name + `</h2>
+        </div><div class="panel-body">
         <p>` + projectsArray[i].description + `</p>
         <br>
         <a href="https://www.github.com/` + projectsArray[i].full_name + `">Github Link</a>
