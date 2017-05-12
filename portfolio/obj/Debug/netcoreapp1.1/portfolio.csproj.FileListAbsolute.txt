@@ -1,0 +1,9 @@
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\bin\Debug\netcoreapp1.1\portfolio.deps.json
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\bin\Debug\netcoreapp1.1\portfolio.runtimeconfig.json
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\bin\Debug\netcoreapp1.1\portfolio.runtimeconfig.dev.json
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\bin\Debug\netcoreapp1.1\portfolio.dll
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\obj\Debug\netcoreapp1.1\portfolio.csprojResolveAssemblyReference.cache
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\obj\Debug\netcoreapp1.1\portfolio.AssemblyInfo.cs
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\bin\Debug\netcoreapp1.1\portfolio.pdb
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\obj\Debug\netcoreapp1.1\portfolio.dll
+C:\Users\Skirsch\Desktop\Epicodus\portfolio\portfolio\obj\Debug\netcoreapp1.1\portfolio.pdb
