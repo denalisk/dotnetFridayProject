@@ -14,10 +14,6 @@
 * Site has an about page
 * Site has a projects page with the top 3 starred projects from the developer's github
 
-#### Stretch Goals
-
-* Implement more advanced functionality to transform this or another app currently in progress into a real portfolio
-
 ## Setup
 >Requirements: Microsoft Visual Studio 2017
 * Clone this repository
